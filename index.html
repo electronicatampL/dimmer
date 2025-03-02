@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DIMMER</h1>
+        <p>Un <strong>dimmer</strong> es un dispositivo utilizado para regular la intensidad de la luz de una bombilla o de una lámpara. En lugar de encender o apagar la luz de manera abrupta, permite ajustar gradualmente su brillo, lo que proporciona un mayor control sobre el ambiente.</p>
+
+        <p><strong>¿Cómo funciona?</strong><br>
+        El dimmer funciona ajustando la cantidad de energía que se envía a la lámpara. La mayoría de los dimmers modernos usan un proceso llamado <strong>corte de fase</strong>, que básicamente corta parte de la corriente alterna (AC) en cada ciclo de onda para reducir la cantidad de energía entregada a la lámpara. Esto crea la sensación de una luz más tenue sin apagarla completamente. Dependiendo del tipo de dimmer, puede funcionar de una de estas formas:<br>
+        1. <strong>Corte de fase adelante (leading-edge)</strong>: corta la primera parte de la onda de corriente. Es más común en bombillas incandescentes.<br>
+        2. <strong>Corte de fase atrás (trailing-edge)</strong>: corta la última parte de la onda de corriente. Este tipo es común en bombillas LED y de bajo consumo.</p>
+
+        <p><strong>Características:</strong><br>
+        - <strong>Ajuste de brillo</strong>: Permite controlar la luminosidad de las luces, creando un ambiente más cálido o suave cuando se desea.<br>
+        - <strong>Eficiencia energética</strong>: Al reducir la cantidad de energía utilizada por las lámparas, los dimmers pueden hacer que el consumo de electricidad sea más eficiente, especialmente en bombillas LED.<br>
+        - <strong>Compatibilidad</strong>: Algunos dimmers solo son compatibles con bombillas incandescentes o halógenas, mientras que otros están diseñados para ser utilizados con bombillas LED o CFL.<br>
+        - <strong>Controles</strong>: Los dimmers pueden ser operados a través de perillas, deslizadores o incluso controles remotos.</p>
+
+        <p>En resumen, un dimmer es un dispositivo práctico que no solo ajusta la iluminación, sino que también puede contribuir al ahorro de energía y a la creación de ambientes agradables en diferentes espacios.</p>
+
+        <h2>Componentes necesarios</h2>
+        <ol>
+            <li>TRIAC MAC12</li>
+            <li>Resistencias de valor 10k y 100 ohms</li>
+            <li>Capacitor 630 volts</li>
+            <li>Diac DB3</li>
+            <li>Potenciometro 500k</li>
+            <li>Foco</li>
+        </ol>
+
+        <h3>Pasos para armar un dimmer</h3>
+        <ul>
+            <li>Tener listos los componentes</li>
+            <li>Conectar el triac correctamente e identificar sus terminales</li>
+            <li>Conectar la resistencia de 10k en la T2 del triac</li>
+            <li>Seguido de la resistencia de 10k conectar el potenciometro de 500k</li>
+            <li>En la terminal T1 del triac conectaremos una resistencia de 100 ohms</li>
+            <li>Seguido de la resistencia de 100 ohms conectamos el diac</li>
+            <li>Seguido del diac conectaremos el capacitor de 630v</li>
+            <li>Conectamos el foco de corriente alterna a la T1 del triac (Fase)</li>
+            <li>Neutro hacia terminal 2 del triac</li>
+        </ul>
+        <h1>Objetivo:
+        </h1>
+        <p>El dimmer tiene que bajar o aumentar la intensidad de la luz del foco dependiendo del ajuste del potenciometro</p>
+        <h2>Diagrama dimmer</h2>
+        <div class="image-container">
+            <img src="dimmer.png" alt="Diagrama de Dimmer">
+        </div>
+    </div>
+</body>
+</html>
